@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Button from "@mui/material/Button";
 
-export const AddUser = () => {
+export const AddStudent = () => {
   //accessing the global state by useContext
   const { user, users, setUser, setUsers } = useContext(UserContext);
 
@@ -13,7 +13,7 @@ export const AddUser = () => {
 
   return (
     <div className="container">
-      <h1>Add User</h1>
+      <h1>Add Student</h1>
       <form
         className="d-flex flex-column m-4 "
         onSubmit={async (e) => {
